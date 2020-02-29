@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PFDBModelStoreContainer" CdmEntityContainer="PFDBEntities">
+    <EntitySetMapping Name="Zapatos">
+      <EntityTypeMapping TypeName="PFDBModel.Zapatos">
+        <MappingFragment StoreEntitySet="Zapatos">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Planta" ColumnName="Planta" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

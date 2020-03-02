@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PFDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Zapatos">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Modelo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Material" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Planta" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Color" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Serie" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Imagen" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="PFDBModelStoreContainer">
+    <EntitySet Name="Zapatos" EntityType="Self.Zapatos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

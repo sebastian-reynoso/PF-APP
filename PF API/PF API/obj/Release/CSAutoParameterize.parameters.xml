@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PFDBEntities-Web.config Connection String" description="PFDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=bitperfect.dev;initial catalog=sbp01;persist security info=True;user id=sbp01;password=sbp01;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\_SEBASTIAN\\proyectos\\net\ framework\\PF-APP\\PF\ API\\PF\ API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PFDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

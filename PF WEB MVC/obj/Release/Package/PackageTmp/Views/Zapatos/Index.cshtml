@@ -1,0 +1,75 @@
+﻿@model IEnumerable<PF_WEB_MVC.Models.ZapatosModel>
+
+
+<h2>Listado</h2>
+
+<head>
+    <title>PF APP</title>
+    <script src="https://kit.fontawesome.com/bcf31434ef.js" crossorigin="anonymous"></script>
+</head>
+
+@using (Html.BeginForm("Index", "Zapatos", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Get))
+{
+    <p>
+        <input type="text" placeholder="Ingrese Código" name="codigo" class="form-control" />
+        <input type="submit" value="Buscar" class="btn btn-default" style="margin-top: 10px" />
+    </p>
+}
+
+<table class="table table-striped">
+    <thead class="table-heading">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Material)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Planta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Serie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagen)
+            </th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Planta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serie)
+            </td> 
+            <td style="width: 120px">
+                <a class="btn btn-success" href="@item.Imagen" target="_blank">
+                    <i class="fas fa-images"></i> Imagen
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>
